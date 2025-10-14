@@ -1,3 +1,4 @@
+#define MOD 1000000007
 int substrings(char* n) {
     long long total = 0,prev=0;
     int i = 0;
@@ -7,5 +8,5 @@ int substrings(char* n) {
         total = (total+prev)%MOD;
         i++;
     }
-    return (int)total;
+    return (int)total;
 }
